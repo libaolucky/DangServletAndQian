@@ -1,0 +1,36 @@
+//前台用户表
+create table user(
+id varchar(50) primary key,
+email varchar(50) not null,
+usename varchar(20),
+password varchar(20)
+);
+
+drop table book;
+create table book (
+   id                   VARCHAR(40)                      not null,
+   cate_id               VARCHAR(40),  -- 类别id
+   book_name            VARCHAR(50),   -- 图书名
+   page_number          int(10),     -- 页数
+   word_number          int(10),     -- 字数
+   original_price       double(10,2),   -- 原价
+   cover                VARCHAR(255),  -- 封面 图片
+   discount_price       double(10,2),   -- 折扣价
+   repertory            int(10),     -- 库存
+   author               VARCHAR(255),  -- 作者
+   edit_recommend       VARCHAR(255),  -- 编辑推荐
+   publish_company      VARCHAR(255),  -- 出版社
+   publish_time         Date,           -- 出版时间
+   prospectus           VARCHAR(255),  -- 内容简介
+   edition              VARCHAR(100),  -- 版次
+   print_time           Date,           -- 印刷时间（上架时间）
+   author_intro         VARCHAR(255),  -- 作者简介
+   print_number         VARCHAR(100),   -- 印刷次数
+   isbn                 int(10),     -- ISBN
+   catalog              VARCHAR(255),  -- 基本目录
+   book_size            VARCHAR(50),   -- 开本
+   paper_type           VARCHAR(50),   -- 纸张
+   media_comment        VARCHAR(255),  -- 媒体评价
+   pack_type            VARCHAR(50),   -- 包装
+   sales_volume         int(10)    -- 销量
+);

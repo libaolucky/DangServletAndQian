@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Kaoshi</display-name>
+  <servlet>
+ <servlet-name>Denglu</servlet-name>
+ <servlet-class>com.hp.servlet.lxy.Denglu</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>Denglu</servlet-name>
+ <url-pattern>/Denglu</url-pattern>
+ </servlet-mapping>
+ <servlet>
+ <servlet-name>Zhuce</servlet-name>
+ <servlet-class>com.hp.servlet.lxy.Zhuce</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>Zhuce</servlet-name>
+ <url-pattern>/Zhuce</url-pattern>
+ </servlet-mapping>
+ <servlet>
+ <servlet-name>Quancha</servlet-name>
+ <servlet-class>com.hp.servlet.lxy.Quancha</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>Quancha</servlet-name>
+ <url-pattern>/Quancha</url-pattern>
+ </servlet-mapping>
+ 
+</web-app>
